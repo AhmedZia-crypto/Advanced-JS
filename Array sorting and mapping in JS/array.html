@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        var songs = ['Zoom', 'Bounce', 'Glow', 'Rush', 'Spark'];
+
+        document.write(songs.sort());
+
+        document.write("<br>");
+
+        document.write(songs.reverse())
+
+        document.write("<br>");
+
+        document.write("<br>");
+
+
+
+        var plays = [320, 85, 210, 50, 175];
+
+        // Ascending — smallest first
+
+        var sort1 = plays.sort(
+
+            function (a, b) {
+
+                return a - b;
+
+            }
+
+        );
+
+        document.write("<br>");
+
+        document.write(sort1)
+
+        var sort2 = plays.sort(
+
+            function (a, b) {
+
+                return b - a;
+
+            }
+
+        );
+
+        document.write("<br>");
+
+        document.write(sort2)
+
+        var plays = [320, 85, 210, 50, 175];
+
+        var labelled = plays.map(
+
+            function (count) {
+
+                return count + ' plays';
+
+            }
+
+        );
+
+        document.write("<br>");
+
+        document.write(labelled)
+
+        // Result: ['320 plays', '85 plays', '210 plays',
+
+        // '50 plays', '175 plays']
+
+
+    </script>
+
+
+</body>
+
+</html>
